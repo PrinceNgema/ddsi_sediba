@@ -70,7 +70,7 @@ def economic():
             width=300,
             height=300)
             with col[i]:
-                st.plotly_chart(fig)
+                st.plotly_chart(fig,use_container_width = True)
 
         a1,a2,a3 = st.columns([5,1,5])
         colors = ['blue','green','red','yellow','brown','orange']
@@ -113,7 +113,7 @@ def economic():
                             autosize=False,
                             width=600,
                             height=400)
-                st.plotly_chart(fig)
+                st.plotly_chart(fig,use_container_width = True)
 
         with a3:
 
@@ -144,7 +144,7 @@ def economic():
 										#xaxis_tickangle=-45,
 										plot_bgcolor= 'rgba(0,0,0,0)'
 									)
-                st.plotly_chart(fig6)
+                st.plotly_chart(fig6,use_container_width = True)
 
     elif ecos_choice == 'Forecasts':
         forecast()
@@ -199,7 +199,7 @@ def economic():
             )
         col1,col2,col3 = st.columns([1,6,1])
         with col2:
-            st.plotly_chart(fig)
+            st.plotly_chart(fig,use_container_width = True)
             
         df = economic_data[['Countries','GDP','GDP per Capita','GNI','GNI per capita','Inflation','Unemployment']]
         if st.checkbox('Show Data'):
