@@ -8,4 +8,4 @@ sqlite==3.36.0
 streamlit-aggrid==0.2.2.post4
 prophet==1.0.1
 wbgapi==1.0.7
-streamlit-authenticator   0.1.0
+streamlit-authenticator==0.1.0
